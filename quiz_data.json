@@ -1,0 +1,448 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "word": "understand",
+      "meaning": "理解",
+      "options": [
+        "understate",
+        "understand",
+        "underestimate",
+        "undertake"
+      ],
+      "correct_word": "understand"
+    },
+    {
+      "id": 2,
+      "word": "understand",
+      "meaning": "理解",
+      "options": [
+        "underestimate",
+        "underline",
+        "understand",
+        "undertake"
+      ],
+      "correct_word": "understand"
+    },
+    {
+      "id": 3,
+      "word": "understand",
+      "meaning": "理解",
+      "options": [
+        "underestimate",
+        "underline",
+        "undertake",
+        "understand"
+      ],
+      "correct_word": "understand"
+    },
+    {
+      "id": 4,
+      "word": "understand",
+      "meaning": "理解",
+      "options": [
+        "underline",
+        "understand",
+        "undertake",
+        "underestimate"
+      ],
+      "correct_word": "understand"
+    },
+    {
+      "id": 5,
+      "word": "understand",
+      "meaning": "理解",
+      "options": [
+        "understand",
+        "underline",
+        "undertake",
+        "underestimate"
+      ],
+      "correct_word": "understand"
+    },
+    {
+      "id": 6,
+      "word": "discover",
+      "meaning": "发现",
+      "options": [
+        "discover",
+        "explore",
+        "uncover",
+        "invent"
+      ],
+      "correct_word": "discover"
+    },
+    {
+      "id": 7,
+      "word": "prepare",
+      "meaning": "准备",
+      "options": [
+        "repair",
+        "premier",
+        "prepay",
+        "prepare"
+      ],
+      "correct_word": "prepare"
+    },
+    {
+      "id": 8,
+      "word": "celebrate",
+      "meaning": "庆祝",
+      "options": [
+        "commemorate",
+        "congratulate",
+        "celebrate",
+        "decorate"
+      ],
+      "correct_word": "celebrate"
+    },
+    {
+      "id": 9,
+      "word": "invite",
+      "meaning": "邀请",
+      "options": [
+        "insight",
+        "invite",
+        "invest",
+        "invent"
+      ],
+      "correct_word": "invite"
+    },
+    {
+      "id": 10,
+      "word": "explain",
+      "meaning": "解释",
+      "options": [
+        "explode",
+        "exclaim",
+        "expand",
+        "explain"
+      ],
+      "correct_word": "explain"
+    },
+    {
+      "id": 11,
+      "word": "environment",
+      "meaning": "环境",
+      "options": [
+        "environment",
+        "atmosphere",
+        "surroundings",
+        "ecosystem"
+      ],
+      "correct_word": "environment"
+    },
+    {
+      "id": 12,
+      "word": "century",
+      "meaning": "世纪",
+      "options": [
+        "century",
+        "decade",
+        "centurion",
+        "centennial"
+      ],
+      "correct_word": "century"
+    },
+    {
+      "id": 13,
+      "word": "experiment",
+      "meaning": "实验",
+      "options": [
+        "expedient",
+        "experience",
+        "experiment",
+        "expedition"
+      ],
+      "correct_word": "experiment"
+    },
+    {
+      "id": 14,
+      "word": "direction",
+      "meaning": "方向",
+      "options": [
+        "instruction",
+        "direction",
+        "director",
+        "correction"
+      ],
+      "correct_word": "direction"
+    },
+    {
+      "id": 15,
+      "word": "suggestion",
+      "meaning": "建议",
+      "options": [
+        "instruction",
+        "proposition",
+        "suggestion",
+        "recommendation"
+      ],
+      "correct_word": "suggestion"
+    },
+    {
+      "id": 16,
+      "word": "population",
+      "meaning": "人口",
+      "options": [
+        "pollution",
+        "populace",
+        "population",
+        "popularity"
+      ],
+      "correct_word": "population"
+    },
+    {
+      "id": 17,
+      "word": "ancient",
+      "meaning": "古代的",
+      "options": [
+        "ancient",
+        "elderly",
+        "antique",
+        "medieval"
+      ],
+      "correct_word": "ancient"
+    },
+    {
+      "id": 18,
+      "word": "modern",
+      "meaning": "现代的",
+      "options": [
+        "recent",
+        "current",
+        "modern",
+        "contemporary"
+      ],
+      "correct_word": "modern"
+    },
+    {
+      "id": 19,
+      "word": "responsible",
+      "meaning": "负责的",
+      "options": [
+        "respective",
+        "responsible",
+        "irresponsible",
+        "responsive"
+      ],
+      "correct_word": "responsible"
+    },
+    {
+      "id": 20,
+      "word": "confident",
+      "meaning": "自信的",
+      "options": [
+        "confidential",
+        "confined",
+        "confidant",
+        "confident"
+      ],
+      "correct_word": "confident"
+    },
+    {
+      "id": 21,
+      "word": "dangerous",
+      "meaning": "危险的",
+      "options": [
+        "risky",
+        "dangerous",
+        "perilous",
+        "hazardous"
+      ],
+      "correct_word": "dangerous"
+    },
+    {
+      "id": 22,
+      "word": "fraction",
+      "meaning": "分数",
+      "options": [
+        "fracture",
+        "fiction",
+        "friction",
+        "fraction"
+      ],
+      "correct_word": "fraction"
+    },
+    {
+      "id": 23,
+      "word": "planet",
+      "meaning": "行星",
+      "options": [
+        "comet",
+        "asteroid",
+        "planet",
+        "star"
+      ],
+      "correct_word": "planet"
+    },
+    {
+      "id": 24,
+      "word": "energy",
+      "meaning": "能量",
+      "options": [
+        "energy",
+        "emergency",
+        "enervate",
+        "synergy"
+      ],
+      "correct_word": "energy"
+    },
+    {
+      "id": 25,
+      "word": "experiment",
+      "meaning": "实验",
+      "options": [
+        "expedition",
+        "experience",
+        "experiment",
+        "expertise"
+      ],
+      "correct_word": "experiment"
+    },
+    {
+      "id": 26,
+      "word": "volume",
+      "meaning": "音量/体积",
+      "options": [
+        "volunteer",
+        "vowel",
+        "volt",
+        "volume"
+      ],
+      "correct_word": "volume"
+    },
+    {
+      "id": 27,
+      "word": "January",
+      "meaning": "一月",
+      "options": [
+        "January",
+        "July",
+        "June",
+        "February"
+      ],
+      "correct_word": "January"
+    },
+    {
+      "id": 28,
+      "word": "February",
+      "meaning": "二月",
+      "options": [
+        "January",
+        "April",
+        "February",
+        "March"
+      ],
+      "correct_word": "February"
+    },
+    {
+      "id": 29,
+      "word": "November",
+      "meaning": "十一月",
+      "options": [
+        "November",
+        "December",
+        "September",
+        "October"
+      ],
+      "correct_word": "November"
+    },
+    {
+      "id": 30,
+      "word": "December",
+      "meaning": "十二月",
+      "options": [
+        "February",
+        "December",
+        "January",
+        "November"
+      ],
+      "correct_word": "December"
+    },
+    {
+      "id": 31,
+      "word": "typhoon",
+      "meaning": "台风",
+      "options": [
+        "tornado",
+        "cyclone",
+        "typhoon",
+        "hurricane"
+      ],
+      "correct_word": "typhoon"
+    },
+    {
+      "id": 32,
+      "word": "temperature",
+      "meaning": "温度",
+      "options": [
+        "temperature",
+        "tempera",
+        "temperament",
+        "temperate"
+      ],
+      "correct_word": "temperature"
+    },
+    {
+      "id": 33,
+      "word": "umbrella",
+      "meaning": "雨伞",
+      "options": [
+        "canopy",
+        "umbrella",
+        "sunshade",
+        "parasol"
+      ],
+      "correct_word": "umbrella"
+    },
+    {
+      "id": 34,
+      "word": "have to",
+      "meaning": "必须",
+      "options": [
+        "must",
+        "have got to",
+        "have to",
+        "need to"
+      ],
+      "correct_word": "have to"
+    },
+    {
+      "id": 35,
+      "word": "be good at",
+      "meaning": "擅长",
+      "options": [
+        "be good at",
+        "be good for",
+        "be good to",
+        "be good with"
+      ],
+      "correct_word": "be good at"
+    },
+    {
+      "id": 36,
+      "word": "take care of",
+      "meaning": "照顾",
+      "options": [
+        "take care of",
+        "take off",
+        "take over",
+        "take out"
+      ],
+      "correct_word": "take care of"
+    },
+    {
+      "id": 37,
+      "word": "make progress",
+      "meaning": "取得进步",
+      "options": [
+        "make advances",
+        "make strides",
+        "make progress",
+        "make headway"
+      ],
+      "correct_word": "make progress"
+    }
+  ]
+}
