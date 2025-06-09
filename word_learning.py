@@ -1,9 +1,11 @@
 
 
 import json
+import random
 import sys
 import msvcrt
 import os
+from word_options_generator import WordOptionsGenerator
 
 def load_words():
     with open('dictionary.json', encoding='utf-8') as f:
@@ -54,16 +56,39 @@ def save_quiz_stats(total_time, total_questions, correct_answers, wrong_answers,
             f.seek(0)
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-def show_multiple_choice(word, options, correct_index):
+def generate_options(word_data):
+    """生成选择题选项"""
+    # 从词库中获取正确答案
+    correct_meaning = word_data['content'].split('### 分析词义')[1].split('###')[0].strip()
+    
+    # 生成3个干扰项
+    with open('dictionary.json', encoding='utf-8') as f:
+        all_words = json.load(f)
+        other_meanings = [w['content'].split('### 分析词义')[1].split('###')[0].strip() 
+                         for w in all_words if w['word'] != word_data['word']]
+    
+    # 随机选择3个干扰项
+    import random
+    options = random.sample(other_meanings, 3)
+    options.append(correct_meaning)
+    random.shuffle(options)
+    
+    return options, options.index(correct_meaning)
+
+def show_multiple_choice(word_data):
+    """显示选择题测试界面"""
+    options, correct_index = generate_options(word_data)
     selected = 0
+    start_time = time.time()
+    
     while True:
         clear_screen()
-        print(f'请选择{word}的正确含义：')
+        print(f'请选择{word_data["word"]}的正确含义：')
         for i, option in enumerate(options):
             prefix = '> ' if i == selected else '  '
             print(f'{prefix}{i + 1}. {option}')
         print('(使用↑↓方向键选择，Enter确认)')
-        print('> 输入exit可随时退出')
+        print('> 输入ESC可随时退出')
 
         key = get_key()
         if key == 'UP' and selected > 0:
@@ -71,9 +96,45 @@ def show_multiple_choice(word, options, correct_index):
         elif key == 'DOWN' and selected < len(options) - 1:
             selected += 1
         elif key == 'ENTER':
-            return selected == correct_index
+            end_time = time.time()
+            answer_time = end_time - start_time
+            is_correct = selected == correct_index
+            
+            clear_screen()
+            print('回答' + ('正确！' if is_correct else '错误！'))
+            print(f"\n正确答案是: {options[correct_index]}")
+            print(f"用时: {answer_time:.1f}秒")
+            print("按任意键继续...")
+            msvcrt.getch()
+            
+            return is_correct, answer_time
+            
         elif key == 'EXIT':
             sys.exit(0)
+
+def create_quiz():
+        # 显示选择题测试
+        is_correct, answer_time = show_multiple_choice(word_data)
+        
+        # 更新统计信息
+        stats = {
+            'word': word_data['word'],
+            'is_correct': is_correct,
+            'answer_time': answer_time,
+            'timestamp': time.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        
+        # 保存单次测试结果
+        if not os.path.exists("quiz_results.json"):
+            with open("quiz_results.json", "w", encoding="utf-8") as f:
+                json.dump([stats], f, ensure_ascii=False, indent=2)
+        else:
+            with open("quiz_results.json", "r+", encoding="utf-8") as f:
+                data = json.load(f)
+                data.append(stats)
+                f.seek(0)
+                json.dump(data, f, ensure_ascii=False, indent=2)
+
 
 def show_word(word_data, index, total):
     print(f'> 单词: {word_data["word"]}')
@@ -94,28 +155,26 @@ def show_word(word_data, index, total):
             print(f'> 例句: {examples}')
             input('按回车继续...')
         
-        # 显示选择题测试
-        options = ['懒惰的', '勤奋的', '聪明的']
-        correct = show_multiple_choice(word_data["word"], options, 1)
-        print('回答' + ('正确！' if correct else '错误！'))
-        print(f"\n正确答案是: {options[correct_index]}")
-        print("按任意键继续...")
-        msvcrt.getch()
-        
-        # 记录答题数据
-        save_quiz_stats(
-            total_time=45,  # 示例数据，实际使用时需要计算
-            total_questions=20,
-            correct_answers=15,
-            wrong_answers=5,
-            fastest_time=0.5,
-            slowest_time=4.2,
-            weak_topics={"商务英语": "3/5正确"}
-        )
-        
+       
         return None
+
+def generate_options(word_data):
+    """生成选择题选项"""
+    generator = WordOptionsGenerator()
+    correct_meaning = word_data['content'].split('### 分析词义')[1].split('###')[0].strip()
+    
+    # 获取干扰项
+    distractors = generator.generate_distractors(word_data['word'], correct_meaning)
+    
+    # 合并选项并打乱
+    options = distractors + [correct_meaning]
+    random.shuffle(options)
+    
+    return options, options.index(correct_meaning)
 
 if __name__ == '__main__':
     words = load_words()
+    
     for i, word in enumerate(words, 1):
-        show_word(word, i, len(words))
+        generate_options(word)
+    #     show_word(word, i, len(words))

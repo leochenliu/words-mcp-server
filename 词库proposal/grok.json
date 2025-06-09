@@ -1,0 +1,116 @@
+{
+    "wordLibrary": [
+        {
+            "wordId": "uuid_or_int",
+            "subject": "happy",
+            "textVariants": [
+                "happier",
+                "happiest",
+                "happily"
+            ],
+            "content": {
+                "audio": [
+                    {
+                        "accent": "US",
+                        "pronunciation": "/ˈhæpi/",
+                        "url": "https://your-cdn.com/audio/us/happy.mp3"
+                    },
+                    {
+                        "accent": "UK",
+                        "pronunciation": "/ˈhæpi/",
+                        "url": "https://your-cdn.com/audio/uk/happy.mp3"
+                    }
+                ],
+                "definitions": [
+                    {
+                        "partOfSpeech": "adj.",
+                        "translation": "快乐的, 幸福的",
+                        "usageNote": "常用于描述内心的愉悦或满足感。",
+                        "examples": [
+                            {
+                                "sentence": "She has a very happy smile.",
+                                "translation": "她的笑容很灿烂。",
+                                "audioUrl": "https://your-cdn.com/audio/examples/happy_01.mp3"
+                            }
+                        ]
+                    },
+                    {
+                        "partOfSpeech": "adj.",
+                        "translation": "幸运的, 恰当的",
+                        "usageNote": "用于描述偶然发生的、有利的事件或合适的选择。",
+                        "examples": [
+                            {
+                                "sentence": "It was a happy coincidence that we met.",
+                                "translation": "我们的相遇是一个幸运的巧合。"
+                            }
+                        ]
+                    }
+                ],
+                "learningAids": {
+                    "etymology": "源自中古英语 hap，意为运气、机遇。",
+                    "mnemonic": "可以联想：有 'happy' (黑皮) 脸蛋的人，天天都很快乐。",
+                    "visualAidUrl": "https://your-cdn.com/images/happy_face.jpg"
+                },
+                "relationships": {
+                    "synonyms": [
+                        "joyful",
+                        "cheerful",
+                        "content"
+                    ],
+                    "antonyms": [
+                        "sad",
+                        "unhappy",
+                        "miserable"
+                    ],
+                    "derivatives": [
+                        "happiness",
+                        "unhappy"
+                    ]
+                },
+                "context": {
+                    "theme": [
+                        "情感",
+                        "日常"
+                    ],
+                    "scene": [
+                        "口语",
+                        "写作"
+                    ]
+                },
+                "multimedia": {
+                    "image": [
+                        "https://your-cdn.com/images/happy.jpg"
+                    ]
+                }
+            },
+            "metadata": {
+                "difficultyLevel": "A2",
+                "frequency": "高频",
+                "systemTags": [
+                    "情感词汇",
+                    "CET-4"
+                ]
+            },
+            "userData": {
+                "tags": [
+                    "我的收藏",
+                    "易混淆词"
+                ],
+                "customNotes": "与 'glad' 区别：happy 更强调内心感受，glad 更偏向于高兴于某事。",
+                "userExamples": [
+                    {
+                        "sentence": "I'm happy to help you.",
+                        "translation": "我很乐意帮助你。"
+                    }
+                ]
+            },
+            "learningStats": {
+                "learningStatus": "需要复习",
+                "reviewCount": 5,
+                "correctCount": 4,
+                "lastReviewedAt": "2025-06-08T14:23:00Z",
+                "nextReviewAt": "2025-06-10T14:23:00Z"
+            }
+        }
+    ]
+}

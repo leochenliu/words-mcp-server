@@ -1,0 +1,75 @@
+{
+    "wordId": "uuid-a1b2c3d4-happy", // 建议使用UUID或稳定算法生成唯一ID，不可变
+    "subject": "happy",
+    "textVariants": [
+        "happier",
+        "happiest",
+        "happily"
+    ], // 单词的变体形式（对于查询和练习很有用）
+    "content": {
+        "audio": [ // 直接关联音频文件，而非仅有文本发音
+            {
+                "accent": "US",
+                "pronunciation": "/ˈhæpi/",
+                "url": "https://your-cdn.com/audio/us/happy.mp3"
+            },
+            {
+                "accent": "UK",
+                "pronunciation": "/ˈhæpi/",
+                "url": "https://your-cdn.com/audio/uk/happy.mp3"
+            }
+        ],
+        "definitions": [ // 定义可以更丰富
+            {
+                "partOfSpeech": "adj.",
+                "translation": "快乐的, 幸福的",
+                "usageNote": "常用于描述内心的愉悦或满足感。", // 用法注释，解释细微差别
+                "examples": [
+                    {
+                        "sentence": "She has a very happy smile.",
+                        "translation": "她的笑容很灿烂。",
+                        "audioUrl": "https://your-cdn.com/audio/examples/happy_01.mp3" // 例句也可以有发音
+                    }
+                ]
+            },
+            {
+                "partOfSpeech": "adj.",
+                "translation": "幸运的, 恰当的",
+                "usageNote": "用于描述偶然发生的、有利的事件或合适的选择。",
+                "examples": [
+                    {
+                        "sentence": "It was a happy coincidence that we met.",
+                        "translation": "我们的相遇是一个幸运的巧合。"
+                    }
+                ]
+            }
+        ],
+        "learningAids": { // 学习辅助（参考Anki、Memrise）
+            "etymology": "源自中古英语 hap，意为运气、机遇。", // 词源
+            "mnemonic": "可以联想：有 'happy' (黑皮) 脸蛋的人，天天都很快乐。", // 助记法
+            "visualAidUrl": "https://your-cdn.com/images/happy_face.jpg" // 关联图片
+        },
+        "relationships": { // 词汇关系网络（参考Pleco）
+            "synonyms": [
+                "joyful",
+                "cheerful",
+                "content"
+            ],
+            "antonyms": [
+                "sad",
+                "unhappy",
+                "miserable"
+            ],
+            "derivatives": [
+                "happiness",
+                "unhappy"
+            ] // 派生词
+        }
+    },
+    "difficultyLevel": "A2", // 建议使用更国际化的标准，如CEFR (A1, A2, B1, B2, C1, C2)
+    "systemTags": [
+        "情感词汇",
+        "CET-4",
+        "高频词"
+    ] // 系统预设的标签，用于全局筛选
+}

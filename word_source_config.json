@@ -1,0 +1,13 @@
+{
+    "sources": {
+        "csv": {
+            "path": "words.csv",
+            "type": "csv"
+        },
+        "json": {
+            "path": "dictionary.json",
+            "type": "json"
+        }
+    },
+    "default_source": "csv"
+}

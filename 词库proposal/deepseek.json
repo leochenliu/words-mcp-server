@@ -1,0 +1,169 @@
+{
+    "wordId": "uuid-v1-550e8400", // UUID v1格式
+    "lemma": "happy", // 单词原形（索引主键）
+    "textVariants": [ // 词形变化
+        {
+            "type": "comparative",
+            "form": "happier"
+        },
+        {
+            "type": "superlative",
+            "form": "happiest"
+        },
+        {
+            "type": "adverb",
+            "form": "happily"
+        }
+    ],
+    // ===== 核心词义 =====
+    "definitions": [
+        {
+            "id": "def-1",
+            "partOfSpeech": "adjective",
+            "semanticDomain": "emotion", // 语义域分类
+            "translations": {
+                "zh": "快乐的，幸福的",
+                "es": "feliz, contento",
+                "fr": "heureux"
+            },
+            "usageNote": "描述持续的心理状态",
+            "examples": [
+                {
+                    "sentence": "She has a happy childhood",
+                    "translation": "她拥有幸福的童年",
+                    "audio": "https://cdn/audio/happy_childhood.mp3",
+                    "contextTags": [
+                        "家庭",
+                        "回忆"
+                    ]
+                }
+            ],
+            "collocations": [ // 高频搭配
+                {
+                    "pattern": "happy + noun",
+                    "examples": [
+                        "happy marriage",
+                        "happy accident"
+                    ]
+                },
+                {
+                    "pattern": "verb + happy",
+                    "examples": [
+                        "make someone happy",
+                        "feel happy"
+                    ]
+                }
+            ]
+        }
+    ],
+    // ===== 发音系统 =====
+    "pronunciations": [
+        {
+            "accent": "US",
+            "ipa": "/ˈhæpi/",
+            "audio": "https://cdn/audio/happy_us.mp3",
+            "speedVariants": [ // 语速变体
+                {
+                    "speed": "slow",
+                    "url": "https://cdn/audio/happy_us_slow.mp3"
+                },
+                {
+                    "speed": "natural",
+                    "url": "https://cdn/audio/happy_us_natural.mp3"
+                }
+            ]
+        }
+    ],
+    // ===== 语义网络 =====
+    "semanticNetwork": {
+        "synonyms": [
+            {
+                "word": "joyful",
+                "similarity": 0.92
+            },
+            {
+                "word": "cheerful",
+                "similarity": 0.87
+            }
+        ],
+        "antonyms": [
+            "sad",
+            "unhappy"
+        ],
+        "derivatives": [ // 派生词
+            {
+                "relation": "noun",
+                "word": "happiness"
+            },
+            {
+                "relation": "negative",
+                "word": "unhappy"
+            }
+        ],
+        "etymology": {
+            "origin": "Middle English",
+            "root": "hap ('chance, luck') + -y",
+            "timeline": "14th century → present"
+        }
+    },
+    // ===== 学习系统 =====
+    "pedagogy": {
+        "difficulty": "A2", // CEFR标准
+        "frequency": "high", // 语料库词频
+        "mnemonics": [ // 记忆法
+            "联想：Happy（黑皮）→ 晒黑的快乐游客",
+            "词根：hap（运气）+ py → 有运气的快乐"
+        ],
+        "commonErrors": [
+            "误用：I am happy *for* you (正确：I am happy *to be* with you)"
+        ]
+    },
+    // ===== 媒体资源 =====
+    "multimedia": {
+        "images": [
+            {
+                "type": "memoryAid",
+                "url": "https://cdn/img/happy_sun.jpg",
+                "description": "笑脸太阳"
+            }
+        ],
+        "videos": [
+            {
+                "source": "YouTube",
+                "id": "dQw4w9WgXcQ",
+                "timestamp": "00:23-00:30" // 单词出现时段
+            }
+        ]
+    },
+    // ===== 学习状态 ===== (用户隔离数据)
+    "learningStatus": {
+        "masteryLevel": 3, // 0-5级
+        "srsData": { // 间隔重复系统
+            "nextReview": "2025-06-15T09:00:00Z",
+            "intervalDays": 30,
+            "easeFactor": 2.5,
+            "reviewHistory": [
+                {
+                    "date": "2025-06-01",
+                    "performance": 0.8, // 正确率
+                    "responseTime": 2.3 // 秒
+                }
+            ]
+        },
+        "userNotes": "和glad的区别：happy更持久，glad更即时",
+        "customTags": [
+            "易错词",
+            "情感词汇"
+        ]
+    },
+    // ===== 元数据 =====
+    "metadata": {
+        "source": "Oxford 3000",
+        "lastUpdated": "2025-06-09T14:30:00Z",
+        "systemTags": [
+            "核心词汇",
+            "CET-4",
+            "日常用语"
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "userWordId": "uuid-user123-word-happy", // 这条记录的唯一ID
+    "userId": "uuid-user-12345", // 关联到用户ID
+    "wordId": "uuid-a1b2c3d4-happy", // 关联到词条ID
+    "status": "Learning", // 枚举: "Unseen" (未学习), "Learning" (学习中), "Reviewing" (复习中), "Mastered" (已掌握)
+    // --- 核心：为Spaced Repetition System (SRS) 记忆算法设计的字段 ---
+    "srs": {
+        "dueDate": "2025-06-15T08:00:00Z", // 核心！下一次应该复习的精确日期
+        "interval": 4, // 当前的复习间隔（天）
+        "easeFactor": 2.5, // 熟悉度/简易度因子（用于调整间隔增加的难度）
+        "repetitions": 2 // 已经成功复习的次数
+    },
+    "performance": { // 用户的表现记录
+        "correctStreak": 3, // 连续答对次数
+        "lastReviewedAt": "2025-06-11T14:20:00Z",
+        "history": [ // （可选）记录详细历史，用于分析
+            {
+                "timestamp": "2025-06-11T14:20:00Z",
+                "response": "correct"
+            },
+            {
+                "timestamp": "2025-06-10T10:00:00Z",
+                "response": "correct"
+            },
+            {
+                "timestamp": "2025-06-08T09:00:00Z",
+                "response": "incorrect"
+            }
+        ]
+    },
+    "isFavorited": true, // 是否被用户收藏（小星星）
+    "personalNotes": "这个词在上次的会议纪要里用错了，要注意。", // 用户的私人笔记
+    "customTags": [
+        "工作词汇",
+        "易混淆"
+    ] // 用户自己给单词打的标签
+}

@@ -1,0 +1,92 @@
+{
+    "wordId": "uuid-abc123",
+    "subject": "happy",
+    "textVariants": [
+        "happier",
+        "happiest",
+        "happily"
+    ],
+    "phonetics": [
+        {
+            "accent": "US",
+            "notation": "/ˈhæpi/",
+            "audioUrl": "https://cdn.example.com/audio/us/happy.mp3"
+        },
+        {
+            "accent": "UK",
+            "notation": "/ˈhæpi/",
+            "audioUrl": "https://cdn.example.com/audio/uk/happy.mp3"
+        }
+    ],
+    "meanings": [
+        {
+            "partOfSpeech": "adj.",
+            "translations": [
+                "快乐的",
+                "幸福的",
+                "幸运的"
+            ],
+            "definition": "feeling or showing pleasure or contentment",
+            "usageNote": "用于表达内心感受或客观状态",
+            "examples": [
+                {
+                    "sentence": "I am very happy today.",
+                    "translation": "我今天非常高兴。",
+                    "audioUrl": "https://cdn.example.com/audio/examples/happy_01.mp3"
+                },
+                {
+                    "sentence": "It was a happy coincidence that we met.",
+                    "translation": "我们的相遇真是一个美好的巧合。"
+                }
+            ],
+            "collocations": [
+                "happy ending",
+                "happy hour"
+            ]
+        }
+    ],
+    "relationships": {
+        "synonyms": [
+            "joyful",
+            "content",
+            "cheerful"
+        ],
+        "antonyms": [
+            "sad",
+            "miserable"
+        ],
+        "derivatives": [
+            "happiness",
+            "unhappy"
+        ]
+    },
+    "learningAids": {
+        "etymology": "源自中古英语 hap，意为运气、机遇。",
+        "mnemonic": "happy 黑皮 → 快乐的脸 → 快乐",
+        "visualAidUrl": "https://cdn.example.com/images/happy.jpg"
+    },
+    "metadata": {
+        "difficultyCEFR": "A2",
+        "frequency": "高频",
+        "systemTags": [
+            "情感词汇",
+            "CET-4",
+            "高频词"
+        ]
+    },
+    "userStatus": {
+        "learningStatus": "需要复习",
+        "reviewCount": 5,
+        "correctCount": 4,
+        "errorRate": 0.2,
+        "lastReviewedAt": "2025-06-08T14:23:00Z",
+        "nextReviewAt": "2025-06-10T14:23:00Z"
+    },
+    "userNotes": {
+        "customTags": [
+            "我的易错词",
+            "写作高频"
+        ],
+        "userExample": "I feel happy when coding."
+    }
+}
