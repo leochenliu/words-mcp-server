@@ -11,6 +11,7 @@ class CSVWordAdapter(WordSourceAdapter):
             for row in reader:
                 word = Word(
                     word=row['word'],
+                    phonetics=row['phonetics'],
                     content=row['content'],
                     meanings=row['meanings'].split('|'),
                     examples=row['examples'].split('|'),

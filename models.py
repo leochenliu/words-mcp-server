@@ -5,6 +5,7 @@ from typing import List, Optional
 class Word:
     """单词数据模型"""
     word: str
+    phonetics:Optional[str]
     content: Optional[str]
     meanings: List[str]
     examples: List[str]
